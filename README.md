@@ -57,14 +57,4 @@ Con ello el sistema operativo, aplica controles de acceso a través de privilegi
 
 ![Ex03](https://github.com/0x04e1/Notas-Directorio-Activo/blob/main/Pic/4.png)
 
-# Módulos a importar para la enumeración.
 
-# ADModule:
-```powershell
-Import-Module .\ADModule-master\Microsoft.ActiveDirectory.Management.dll
-Import-Module .\ADModule-master\ActiveDirectory\ActiveDirectory.psd1
-```
-# PowerView:
-```powershell
-Import-Module .\PowerView.ps1
-```
