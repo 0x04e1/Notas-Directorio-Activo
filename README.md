@@ -31,9 +31,9 @@ Get-ADGroup -Filter * -Server 192.168.1.155
 ```
 # LogonSession
 
-![Ex00](https://github.com/0x04e1/Notas-Directorio-Activo/blob/main/Pic/1.png)
-
 Se crea cuando hay una autenticación sea de manera remota o local. Las credenciales siempre se asignan a una *logon session*.
+
+![Ex00](https://github.com/0x04e1/Notas-Directorio-Activo/blob/main/Pic/1.png)
 
 Hay dos tipos:
 
