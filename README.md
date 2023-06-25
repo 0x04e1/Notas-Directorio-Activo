@@ -43,6 +43,8 @@ Hay dos tipos:
 Ejmplo:
 ![Ex01](https://github.com/0x04e1/Notas-Directorio-Activo/blob/main/Pic/2.png)
 
+Nota: aunque el usuario pepe puede consumir el recurso con permisos de lectura y escritura, si estas no se envían de manera explícita, no se podrá consumir el recurso.
+
 # Módulos a importar para la enumeración.
 
 # ADModule:
