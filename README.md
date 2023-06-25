@@ -41,9 +41,10 @@ Hay dos tipos:
 
 **(2) No interactivas**: no se almacenan en memoria, solo se envían en la red. Por defecto **no se guardan en memoria**.
 Ejmplo:
+
 ![Ex01](https://github.com/0x04e1/Notas-Directorio-Activo/blob/main/Pic/2.png)
 
-Nota: aunque el usuario pepe puede consumir el recurso con permisos de lectura y escritura, si estas no se envían de manera explícita, no se podrá consumir el recurso.
+Nota: aunque el usuario pepe puede consumir el recurso con permisos de lectura y escritura, si estas (credenciales) no se envían de manera explícita para consumir un recurso a través de SSO, no se podrá consumir el recurso.
 
 # Módulos a importar para la enumeración.
 
