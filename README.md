@@ -4,7 +4,7 @@
 # Tabla de contenido
 
 - [Enumeración](#Enumeración).
-- [Logon Sesssion](#LogonSession).
+- [Logon Sesssion](#Logon Session).
 
 # Enumeración
 ### Listar usuarios locales:
