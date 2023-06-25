@@ -4,7 +4,7 @@
 # Tabla de contenido
 
 - [Enumeración](#Enumeración).
-- [Logon Sesssion](#Logon Session).
+- [Logon Sesssion](#LogonSession).
 
 # Enumeración
 ### Listar usuarios locales:
@@ -29,7 +29,7 @@ Get-LocalGroup
 Get-ADGroup -Filter *
 Get-ADGroup -Filter * -Server 192.168.1.155
 ```
-# Logon Session
+# LogonSession
 
 ![Token](https://github.com/0x04e1/Notas-Directorio-Activo/blob/main/Pic/1.png)
 
