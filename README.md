@@ -31,7 +31,17 @@ Get-ADGroup -Filter * -Server 192.168.1.155
 ```
 # LogonSession
 
-![Token](https://github.com/0x04e1/Notas-Directorio-Activo/blob/main/Pic/1.png)
+![Ex00](https://github.com/0x04e1/Notas-Directorio-Activo/blob/main/Pic/1.png)
+
+Se crea cuando hay una autenticación sea de manera remota o local. Las credenciales siempre se asignan a una *logon session*.
+
+Hay dos tipos:
+
+**(1) Interactivas**: las credenciales se almacenan en memoria (lsass.exe) para *Single Sign-On*.
+
+**(2) No interactivas**: no se almacenan en memoria, solo se envían en la red. Por defecto **no se guardan en memoria**.
+Ejmplo:
+![Ex01](https://github.com/0x04e1/Notas-Directorio-Activo/blob/main/Pic/2.png)
 
 # Módulos a importar para la enumeración.
 
