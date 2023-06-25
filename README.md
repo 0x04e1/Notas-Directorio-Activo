@@ -29,7 +29,7 @@ Get-LocalGroup
 Get-ADGroup -Filter *
 Get-ADGroup -Filter * -Server 192.168.1.155
 ```
-# LogonSession
+# *LogonSession*
 
 Se crea cuando hay una autenticación sea de manera remota o local. Las credenciales siempre se asignan a una *logon session*.
 
