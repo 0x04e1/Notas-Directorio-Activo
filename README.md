@@ -6,7 +6,7 @@
 - [Enumeración](#Enumeración).
 - [*Logon Sesssion*](#LogonSession).
 - [*Token*](#Token).
-- [Movimiento lateral](#Moviliento_lateral).
+- [Movimiento_lateral](#Moviliento_lateral).
 
 # Enumeración
 ### Listar usuarios locales:
