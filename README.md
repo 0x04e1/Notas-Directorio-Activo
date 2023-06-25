@@ -5,6 +5,7 @@
 
 - [Enumeración](#Enumeración).
 - [*Logon Sesssion*](#LogonSession).
+- [*Token*](#Token).
 
 # Enumeración
 ### Listar usuarios locales:
@@ -45,6 +46,16 @@ Ejmplo:
 ![Ex01](https://github.com/0x04e1/Notas-Directorio-Activo/blob/main/Pic/2.png)
 
 Nota: aunque el usuario pepe puede consumir el recurso con permisos de lectura y escritura, si estas (credenciales) no se envían de manera explícita para consumir un recurso a través de SSO, no se podrá consumir el recurso.
+
+# *Token*
+
+Estructura de datos con información de seguridad de un usuario, gupos, identificar, etc.
+
+![Ex02](https://github.com/0x04e1/Notas-Directorio-Activo/blob/main/Pic/3.png)
+
+Con ello el sistema operativo, aplica controles de acceso a través de privilegios. Todos los objetos del sistema operativo Windows cuentan con descriptores de seguridad, allí está la lista **DACL** y en ella se especifica quién tiene acceso a los objetos.
+
+![Ex03](https://github.com/0x04e1/Notas-Directorio-Activo/blob/main/Pic/4.png)
 
 # Módulos a importar para la enumeración.
 
