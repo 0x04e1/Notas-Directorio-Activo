@@ -4,9 +4,9 @@
 # Tabla de contenido
 
 - [Enumeración](#Enumeración).
-- [*Logon Sesssion*](LogonSession).
+- [*Logon Sesssion*](#Logon-Session).
 - [*Token*](#Token).
-- [Movimiento_lateral](#Moviliento_lateral).
+- [Movimiento_lateral](#Movimiento_lateral).
 
 # Enumeración
 ### Listar usuarios locales:
