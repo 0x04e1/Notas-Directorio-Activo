@@ -2,25 +2,25 @@
 
 - [Enumeración](#Enumeración).
 
-### Enumeración
-# Listar usuarios locales:
+# Enumeración
+### Listar usuarios locales:
 ```powershell
 Get-LocalUser
 Get-WmiObject -Class win32_userprofile | select localpath, SID
 ```
 
-# Listar usuarios del dominio:
+### Listar usuarios del dominio:
 ```powershell
 Get-ADUser -Filter *
 Get-ADUser -Filter * -Server 192.168.1.155
 ```
 
-# Listar grupos locales
+### Listar grupos locales
 ```powershell
 Get-LocalGroup
 ```
 
-# Listar grupos del dominio
+### Listar grupos del dominio
 ```powershell
 Get-ADGroup -Filter *
 Get-ADGroup -Filter * -Server 192.168.1.155
