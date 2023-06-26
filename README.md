@@ -136,3 +136,16 @@ Cached Tickets: (1)
         Kdc Called:
 ```
 Al consumir el servicio CIF, se creará el TGS, Windows hará el trabajo.
+
+```powershell
+#2>     Client: juan @ CS.ORG
+        Server: cifs/server-01 @ CS.ORG
+        KerbTicket Encryption Type: AES-256-CTS-HMAC-SHA1-96
+        Ticket Flags 0x40a50000 -> forwardable renewable pre_authent ok_as_delegate name_canonicalize
+        Start Time: 6/26/2024 12:49:01 (local)
+        End Time:   6/26/2024 22:48:51 (local)
+        Renew Time: 7/3/2024 12:48:51 (local)
+        Session Key Type: AES-256-CTS-HMAC-SHA1-96
+        Cache Flags: 0
+        Kdc Called: SERVER-01.cs.org
+```
