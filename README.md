@@ -8,7 +8,7 @@
   - *[Pass-the-Hash](#Pass-the-Hash)*.
   - *[Over-Pass-the-Hash](#Over-Pass-the-Hash)*.
   - *[Pass-the-ticket](#Pass-the-Ticket)*.
-  - [ASK-TGT/TGSt](#ASK-TGT/TGS).
+  - [ASK-TGT/TGSt](#ASK_TGT_TGS).
 
 # Enumeración
 ### Listar usuarios locales:
