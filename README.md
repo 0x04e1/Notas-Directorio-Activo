@@ -1,7 +1,7 @@
 ## Tabla de contenido
 
 - [Enumeración](#Enumeración).
-- [*Logon_Sesssion*](#Logon_Sesssion).
+- [*LogonSesssion*](#LogonSesssion).
 - [Token](#Token).
 - [Viñetas para tablas de contenido](#vinetas).
 - [insertar imágenes](#insertar-imagenes).
@@ -36,7 +36,7 @@ Get-LocalGroup
 Get-ADGroup -Filter *
 Get-ADGroup -Filter * -Server 192.168.1.155
 ```
-# *Logon_Sesssion*
+# *LogonSesssion*
 
 Se crea cuando hay una autenticación sea de manera remota o local. Las credenciales siempre se asignan a una *logon session*.
 
