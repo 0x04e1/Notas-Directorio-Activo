@@ -8,7 +8,7 @@
   - *[Pass-the-Hash](#Pass-the-Hash)*
   - *[Over-Pass-the-Hash](#Over-Pass-the-Hash)*
   - *[Pass-the-ticket](#Pass-the-Ticket)*
-  - [Creación de TGT/TGS (Manual)](#Manual)
+  - [Creación de TGT_TGS (Manual)](#Creación_de_TGT_TGS)
 
 # Enumeración
 ### Listar usuarios locales:
