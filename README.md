@@ -3,7 +3,7 @@
 - [Enumeración](#Enumeración).
 - [*LogonSesssion*](#LogonSesssion).
 - [Token](#Token).
-- [Viñetas para tablas de contenido](#vinetas).
+- [Movimiento_lateral](#Movimiento_lateral).
 - [insertar imágenes](#insertar-imagenes).
 - [Insertar enlaces](#insertar-enlaces).
 - [Hacer anclaje](#hacer-anclaje).
@@ -63,7 +63,7 @@ Con ello el sistema operativo, aplica controles de acceso a través de privilegi
 
 ![Ex03](https://github.com/0x04e1/Notas-Directorio-Activo/blob/main/Pic/4.png)
 
-# Moviliento_latera
+# Movimiento_lateral
 
 ## *runas*
 
