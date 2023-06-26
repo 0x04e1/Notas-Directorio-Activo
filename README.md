@@ -6,14 +6,6 @@
 - [Movimiento_lateral](#Movimiento_lateral).
   - [runas](#runas).
   - *[Pass-The-Hash](#Pass-The-Hash)*.
-- [insertar imágenes](#insertar-imagenes).
-- [Insertar enlaces](#insertar-enlaces).
-- [Hacer anclaje](#hacer-anclaje).
-- [Insertar una línea de código](#insertar-una-linea-de-codigo).
-- [Insertar un bloque de código](#insertar-un-bloque-de-codigo).
-- [Resaltar el código](#resaltar-el-codigo).
-- [Insertar tablas](#insertar-tablas).
-- [Otras referencias sobre Markdown](#otras-referencias-sobre-markdown).
 
 # Enumeración
 ### Listar usuarios locales:
