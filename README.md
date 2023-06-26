@@ -1,18 +1,17 @@
-- [Paste Your Document In Here](#paste-your-document-in-here)
-  * [And a table of contents](#and-a-table-of-contents)
-  * [On the right](#on-the-right)
+## Tabla de contenido
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-# Notas.
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-
-# Tabla de contenido
-
-- [Enumeración](#Enumeración).
-- [Logon Sesssion](#Logon-Session).
-- [*Token*](#Token).
-- [Movimiento_lateral](#Movimiento_lateral).
+- [Insertar HN](#insertar-hn).
+- [Cursivas](#cursivas).
+- [Negrilla](#negrilla).
+- [Viñetas para tablas de contenido](#vinetas).
+- [insertar imágenes](#insertar-imagenes).
+- [Insertar enlaces](#insertar-enlaces).
+- [Hacer anclaje](#hacer-anclaje).
+- [Insertar una línea de código](#insertar-una-linea-de-codigo).
+- [Insertar un bloque de código](#insertar-un-bloque-de-codigo).
+- [Resaltar el código](#resaltar-el-codigo).
+- [Insertar tablas](#insertar-tablas).
+- [Otras referencias sobre Markdown](#otras-referencias-sobre-markdown).
 
 # Enumeración
 ### Listar usuarios locales:
