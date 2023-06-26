@@ -4,6 +4,7 @@
 - *[LogonSesssion](#LogonSesssion)*.
 - [Token](#Token).
 - [Movimiento_lateral](#Movimiento_lateral).
+- - [runas](#runas).
 - [insertar imágenes](#insertar-imagenes).
 - [Insertar enlaces](#insertar-enlaces).
 - [Hacer anclaje](#hacer-anclaje).
