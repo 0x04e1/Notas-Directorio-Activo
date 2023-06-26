@@ -7,6 +7,8 @@
   - [runas](#runas).
   - *[Pass-the-Hash](#Pass-the-Hash)*.
   - *[Over-Pass-the-Hash](#Over-Pass-the-Hash)*.
+  - *[Pass-the-ticket](#Pass-the-Ticket)*.
+  - [ASK-TGT/TGSt](#ASK-TGT/TGS).
 
 # Enumeración
 ### Listar usuarios locales:
@@ -100,7 +102,7 @@ C:\AD\Tools\SafetyKatz.exe "sekurlsa::pth /user:juan /domain:cs.org /ntlm:709d42
 
 En este caso, se agrega el parámetro **/ptt** al comando de *Pass the Hash* anterior. Esto indica a Mimikatz que importe el ticket de Kerberos generado en la memoria del sistema para establecer una sesión de autenticación en lugar de solo realizar un *Pass the Hash*. Esto permite realizar la técnica de *Over Pass the Hash* y obtener acceso a otros recursos o sistemas dentro de la red.
 
-## Pass-the-Ticket
+## *Pass-the-Ticket*
 
 El parámetro "asktgt" en Rubeus, se utiliza para solicitar un Ticket Granting Ticket (TGT) utilizando las credenciales de un usuario especificado. Y es psoible realizarlo de manera remota:
 ```powershell
