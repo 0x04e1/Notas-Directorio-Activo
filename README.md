@@ -1,7 +1,7 @@
 ## Tabla de contenido
 
 - [Enumeración](#Enumeración).
-- [Cursivas](#cursivas).
+- [Token](#Token).
 - [Negrilla](#negrilla).
 - [Viñetas para tablas de contenido](#vinetas).
 - [insertar imágenes](#insertar-imagenes).
