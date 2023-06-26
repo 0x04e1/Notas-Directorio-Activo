@@ -149,3 +149,22 @@ Al consumir el servicio CIF, se creará el TGS, Windows hará el trabajo.
         Cache Flags: 0
         Kdc Called: SERVER-01.cs.org
 ```
+
+Creando el TGS manualmente:
+
+PS C:\Users\pepe.CS> klist
+
+Current LogonId is 0:0x2cf2cb
+
+Cached Tickets: (1)
+
+#0>     Client: juan @ CS.ORG
+        Server: cifs/server-01.cs.org @ CS.ORG
+        KerbTicket Encryption Type: AES-256-CTS-HMAC-SHA1-96
+        Ticket Flags 0x40a50000 -> forwardable renewable pre_authent ok_as_delegate name_canonicalize
+        Start Time: 6/26/2023 13:18:53 (local)
+        End Time:   6/26/2023 20:08:43 (local)
+        Renew Time: 7/3/2023 10:08:43 (local)
+        Session Key Type: AES-256-CTS-HMAC-SHA1-96
+        Cache Flags: 0
+        Kdc Called:
