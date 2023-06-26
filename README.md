@@ -1,6 +1,6 @@
 ## Tabla de contenido
 
-- [Enumeración](#insertar-hn).
+- [Enumeración](#Enumeración).
 - [Cursivas](#cursivas).
 - [Negrilla](#negrilla).
 - [Viñetas para tablas de contenido](#vinetas).
