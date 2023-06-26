@@ -86,3 +86,10 @@ Al contar con los paquetes de autenticación *msv1_0* y *kerberos*, es posible a
 msv1_0   - data copy @ 0000013DED28C5E0 : OK !
 kerberos - data copy @ 0000013DECC9C6C8
 ```
+## Over-Pass-The-Hash
+1. Se crea una nueva sesión.
+2. Se actualizan *hash* y/o llaves de la sesión.
+3. Se copia el *token* original.
+4. Similar a **runas /netonly** pero sin credenciales.
+
+En caso de obtener un **TGT** para contar con su **TGS**, no se requiere ser Administrador, porque el paquete de autenticación de kerberos cuenta con mensajes que no requieren privilegios para su importación.
