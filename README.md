@@ -1,14 +1,14 @@
 ## Tabla de contenido
 
-- [Enumeración](#Enumeración).
-- *[LogonSesssion](#LogonSesssion)*.
-- [Token](#Token).
-- [Movimiento_lateral](#Movimiento_lateral).
-  - [runas](#runas).
-  - *[Pass-the-Hash](#Pass-the-Hash)*.
-  - *[Over-Pass-the-Hash](#Over-Pass-the-Hash)*.
-  - *[Pass-the-ticket](#Pass-the-Ticket)*.
-  - [ASK-TGT/TGSt](#ASK_TGT_TGS).
+- [Enumeración](#Enumeración)
+- *[LogonSesssion](#LogonSesssion)*
+- [Token](#Token)
+- [Movimiento_lateral](#Movimiento_lateral)
+  - [runas](#runas)
+  - *[Pass-the-Hash](#Pass-the-Hash)*
+  - *[Over-Pass-the-Hash](#Over-Pass-the-Hash)*
+  - *[Pass-the-ticket](#Pass-the-Ticket)*
+  - [ASK-TGT/TGSt](#ASK_TGT_TGS)
 
 # Enumeración
 ### Listar usuarios locales:
