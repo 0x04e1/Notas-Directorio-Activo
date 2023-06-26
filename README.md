@@ -1,7 +1,7 @@
 ## Tabla de contenido
 
 - [Enumeración](#Enumeración).
-- [*LogonSesssion*](#LogonSesssion).
+- [LogonSesssion](#LogonSesssion).
 - [Token](#Token).
 - [Movimiento_lateral](#Movimiento_lateral).
 - [insertar imágenes](#insertar-imagenes).
